@@ -5,11 +5,17 @@ COPY package.json .
 RUN npm install
 
 
-FROM node:12-alpine
+FROM node:18-alpine
 
 # set timezone JST
 RUN apk --no-cache add tzdata && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
+# npmの最新バージョンをインストール
+RUN npm install -g npm@latest
+
+# 依存関係をインストール
+RUN npm install
 
 ENV NODE_ENV production
 ENV DISABLE_NPM_INSTALL true
