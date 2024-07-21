@@ -5,7 +5,6 @@
 //   ping - Reply with pong
 //   echo <text> - Reply back with <text>
 //   time - Reply with current time
-'use strict';
 
 const { ClarifaiStub, grpc } = require("clarifai-nodejs-grpc");
 const fs = require("fs");
