@@ -17,7 +17,8 @@
     "node": "16.x"
   },
   "dependencies": {
-    "forever": "^4.0.0",
+    "clarifai-nodejs-grpc": "^10.6.3",
+    "forever": "^1.0.1",
     "hubot-direct": ">=3 <4",
     "jimp": "^0.22.12",
     "kuromoji": "^0.1.2",
