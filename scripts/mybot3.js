@@ -1,11 +1,3 @@
-// Description:
-//   Utility commands surrounding Hubot uptime.
-//
-// Commands:
-//   ping - Reply with pong
-//   echo <text> - Reply back with <text>
-//   time - Reply with current time
-
 const { ClarifaiStub, grpc } = require("clarifai-nodejs-grpc");
 const fs = require("fs");
 const kuromoji = require('kuromoji');
