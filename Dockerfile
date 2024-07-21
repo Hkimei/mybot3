@@ -1,4 +1,4 @@
-FROM node:12 AS node_modules
+FROM node:14 AS node_modules
 
 WORKDIR /daab
 COPY package.json .
